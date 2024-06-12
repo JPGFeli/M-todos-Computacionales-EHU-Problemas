@@ -1,0 +1,8 @@
+El comando
+
+	mkdir ejercicios/ej1
+
+no funciona ya que le estamos indicando al ordenador que cree la carpeta ej1 dentro del directorio ejercicios. Sin embargo, éste no existe, por lo que 
+se produce el error. Para que realice lo que queremos debemos escribir
+
+	mkdir -p ejercicios/ej1

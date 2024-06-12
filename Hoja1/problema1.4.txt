@@ -1,0 +1,17 @@
+cat fichero | tr -d \"r" > fichero1
+
+Utilizamos el comando cat para mandar el contenido del archivo de texto a tr, que es con el que va a trabajar. tr se utiliza para realizar distintas 
+modificaciones en el texto. En este caso tr -d lo vamos a utilizar para borrar (delete) un caracter, que en el jemplo de los ejercicios será la "r". 
+Por último lo usaremos para crear un nuevo archivo de texto con las modificaciones hechas.
+
+mv fichero1 fichero
+
+Al utilizar este comando renombramos el nuevo fichero creado como el fichero original.
+
+
+
+Para mover un directorio dentro de otro existente podemos utilizar el comando mv:
+
+mv directorio1 /directorio2/
+
+De esta manera, si directorio1 y directorio2 estaban ambos en./ ahora será /directorio2/directorio1. 

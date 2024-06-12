@@ -1,0 +1,10 @@
+Supongamos que tenemos dos archivos: archivo1.txt y archivo2.txt. Si queremos juntar ambos texto podemos utilizar el comando cat para hacerlo de dos 
+maneras:
+	 1) Con el comando cat seguido de los nombres de los archivos, el ordenador me muestra el texto del primero archivo y del segundo 
+	 juntos. Para mandar este texto a un nuevo archivo utilizamos el comando >.
+		
+		cat archivo1.txt archivo2.txt > archivo12.txt
+
+	2) Si usamos el comando cat junto con >> llevaremos el output de cat al final del archivo de texto que sigue a >>.
+		
+		cat archivo2.txt >> archivo1.txt 

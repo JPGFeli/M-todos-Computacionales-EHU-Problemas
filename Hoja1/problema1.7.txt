@@ -1,0 +1,9 @@
+Para crear la función sinx/x en el intervalo -3pi,3pi:
+
+plot [-3*pi:3*pi] sin(x)/x
+set term png
+set output "sinx.png"
+replot
+set out
+
+

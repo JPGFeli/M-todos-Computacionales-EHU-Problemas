@@ -1,0 +1,19 @@
+Para crear las gráficas he utilizdo los siguientes comandos:
+
+En primer lugar he usado
+
+	set term jpeg
+
+para que todas las gráficas se guarden en ese formato. Luego les he puesto el nombre a cada una con
+
+	set output "nombre.jpeg"
+
+Por último he usado
+
+	plot [m:M] "data2.xy" with line
+
+para gráficos en un intervalo concreto del eje de abscisas y 
+
+	plot [] [m:M] "data2.xy" with line
+
+para gráficos limitados solamente en el eje de ordenadas.

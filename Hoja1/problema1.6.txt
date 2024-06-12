@@ -1,0 +1,42 @@
+Sea un archivo de texto de nombre fichero.txt:
+
+	a) cat fichero.txt | tr -d "r" > fichero1.txt
+	   
+	   El comando cat introduce el contenido del fichero.txt en el comando tr gracias al comando |, es decir, en este caso tr borra el caracter 
+	   "r" del texto y el comando > crea un nuevo archivo de nombre ficher1.txt con el texto modificado.
+
+	b) cat fichero.txt | sed "s/r/ /g" > fichero2.txt
+
+	   Similar al caso anterior pero con el comando sed, cuya función aquí es la de sustituir ("s/) el caracter "r" por espacio en blanco " " en
+	   todos lo casos que aplique en una línea (/g").
+
+	c) cat fichero.txt | sed "s/r//g" > fichero3.txt
+	   
+	   Igual que el caso anterior pero en vez de sustituir por un espacio en blanco lo hace con un espacio vacío, dicese, borra el caracter "r" 
+	   del texto.
+
+	d) cat fichero.txt | sed "s/r/R/g" > fichero4.txt
+
+	   Igual que antes, sed sustituye el caracter "r" por "R".
+
+	e) cat fichero.txt | sed "s/tigres/dragones/g" | sed "s/tristes/alegres/g" > fichero5.txt
+
+	   Ahora usamos el comando | para realizar dos sustituciones mediante el comando sed. Al igual que antes, finalmente creamos un archivo 
+	   nuevo con las dos palabras modificadas.
+
+	f) cat fichero5.txt > fichero.txt
+
+	   El comando > crea un archivo de texto de nombre fichero.txt con el contenido de fichero5. Como en nuestro caso ya existía un archivo con 
+	   ese nombre, el ordenador sobreescribe sobre él.
+
+	g) rm fichero?.txt
+
+	   El comando rm borrará todos los archivos cuyo nombre sea fichero+caracter.txt. El espacio vacío no entra dentro de las opciones de ?.
+
+	h) rm fichero*.txt
+
+	   El comando rm borrará todos los archivos cuyo nombre sea fichero seguido de cualquier combinación de caracteres, incluido el espacio vacío.
+	
+	i) cat fichero.txt | sed "1 iResultado final" 
+
+	e) El comando sed es una herramienta que nos permite borrar, introducir e incluso sustituir texto de un archivo.

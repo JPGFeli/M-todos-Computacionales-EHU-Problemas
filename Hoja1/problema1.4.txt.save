@@ -1,0 +1,4 @@
+cat fichero | tr -d /"r" > fichero1
+
+Utilizamos el comando cat para mandar el contenido del fichero de texto a tr, que es con el que va a trabajar. tr se utiliza para realizar distintas modificaciones en el texto. En este caso tr -d lo 
+vamos a utilizar para borrar (delete) un caracter, que en el ejemplo de los ejercicios será la "r". Por último > lo usaremos para crear un nuevo 
