@@ -1,0 +1,22 @@
+
+a) Este algoritmo funciona porque lo que estamos haciendo es utilizar la notación binaria para expresar la multiplicación AxB de distinta manera. Con 
+la primera columna estamos hallando A expresado como suma de potencias de 2, mientras que la sucesión de la segunda columna se puede expresar también 
+como Bx(2^n). Si de la primera columna escogemos los valores que sumados dan A y sumanos los valores correspondientes de la segunda columna,
+lo que estamos haciendo es expresar AxB como Bx(2^0+2^1+2^2+...) donde los exponentes de los doses varían según el número A. 
+
+Por poner un ejemplo: 3x4 
+
+	Primera Columna: 2^0=1, 2^1=2 
+	Segunda Columna: s_0=4, s_1=2x4=8
+
+En nuestro ejemplo 3=1+2, por lo que sumamos todos los elemntos de la segunda columna.
+
+	3x4=4+8=12
+
+Es fácil ver que
+
+	3x4=4x(1+2)=4x(2^0+2^1)
+
+Y como precisamente hemos escogido los valores de la primera columna que sumados den 3, entonces:
+
+	4x(2^0+2^1)=4x3
